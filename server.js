@@ -27,7 +27,7 @@ app.post("/upload", (req, res) => {
   }
 
   const file = req.files.file;
-
+  console.log(file);
   res.json({ fileName: file.name });
 });
 
